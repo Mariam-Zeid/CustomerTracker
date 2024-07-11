@@ -1,0 +1,156 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Ahmed Ali",
+      "gender": "male",
+      "image": "https://www.svgrepo.com/show/27220/avatar.svg"
+    },
+    {
+      "id": 2,
+      "name": "Aya Elsayed",
+      "gender": "female",
+      "image": "https://www.svgrepo.com/show/58391/avatar.svg"
+    },
+    {
+      "id": 3,
+      "name": "Mina Adel",
+      "gender": "male",
+      "image": "https://www.svgrepo.com/show/170303/avatar.svg"
+    },
+    {
+      "id": 4,
+      "name": "Sarah Reda",
+      "gender": "female",
+      "image": "https://www.svgrepo.com/show/18074/avatar.svg"
+    },
+    {
+      "id": 5,
+      "name": "Mohamed Sayed",
+      "gender": "male",
+      "image": "https://www.svgrepo.com/show/26325/avatar.svg"
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "customer_id": 1,
+      "date": "01-01-2022",
+      "amount": 1000
+    },
+    {
+      "id": 2,
+      "customer_id": 1,
+      "date": "02-01-2022",
+      "amount": 2000
+    },
+    {
+      "id": 3,
+      "customer_id": 2,
+      "date": "01-01-2022",
+      "amount": 550
+    },
+    {
+      "id": 4,
+      "customer_id": 3,
+      "date": "01-01-2022",
+      "amount": 500
+    },
+    {
+      "id": 5,
+      "customer_id": 2,
+      "date": "02-01-2022",
+      "amount": 1300
+    },
+    {
+      "id": 6,
+      "customer_id": 4,
+      "date": "01-01-2022",
+      "amount": 750
+    },
+    {
+      "id": 7,
+      "customer_id": 3,
+      "date": "02-01-2022",
+      "amount": 1250
+    },
+    {
+      "id": 8,
+      "customer_id": 5,
+      "date": "01-01-2022",
+      "amount": 2500
+    },
+    {
+      "id": 9,
+      "customer_id": 5,
+      "date": "02-01-2022",
+      "amount": 875
+    },
+    {
+      "id": 10,
+      "customer_id": 2,
+      "date": "01-01-2023",
+      "amount": 200
+    },
+    {
+      "id": 11,
+      "customer_id": 1,
+      "date": "02-01-2023",
+      "amount": 1200
+    },
+    {
+      "id": 12,
+      "customer_id": 1,
+      "date": "03-01-2023",
+      "amount": 1400
+    },
+    {
+      "id": 13,
+      "customer_id": 2,
+      "date": "02-01-2023",
+      "amount": 600
+    },
+    {
+      "id": 14,
+      "customer_id": 3,
+      "date": "01-01-2023",
+      "amount": 900
+    },
+    {
+      "id": 15,
+      "customer_id": 3,
+      "date": "02-01-2023",
+      "amount": 1300
+    },
+    {
+      "id": 16,
+      "customer_id": 4,
+      "date": "01-01-2023",
+      "amount": 800
+    },
+    {
+      "id": 17,
+      "customer_id": 4,
+      "date": "02-01-2023",
+      "amount": 950
+    },
+    {
+      "id": 18,
+      "customer_id": 5,
+      "date": "01-01-2023",
+      "amount": 2700
+    },
+    {
+      "id": 19,
+      "customer_id": 5,
+      "date": "02-01-2023",
+      "amount": 1250
+    },
+    {
+      "id": 20,
+      "customer_id": 5,
+      "date": "03-01-2023",
+      "amount": 1500
+    }
+  ]
+}
