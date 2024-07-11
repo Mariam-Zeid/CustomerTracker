@@ -44,7 +44,7 @@ export default function Dashboard() {
             <h1 className="text-4xl mb-20 text-center">
               Transactions Dashboard
             </h1>
-            <ResponsiveContainer width="95%" className="px-3" height={300}>
+            <ResponsiveContainer width="100%" className="px-3" height={300}>
               <LineChart data={customerTransactions}>
                 <Line type="monotone" dataKey="amount" stroke="#8884d8" />
                 <XAxis dataKey="date" />

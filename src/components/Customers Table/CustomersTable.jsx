@@ -77,7 +77,7 @@ export default function CustomersTable() {
     rowsPerPage: 5,
     fixedHeader: true,
     rowsPerPageOptions: [5, 10, 20, 30],
-    responsive: 'scrollMaxHeight',
+    responsive: "scrollMaxHeight",
     scrollY: true,
     scrollX: true,
     scrollbars: true,
@@ -187,7 +187,6 @@ export default function CustomersTable() {
       <div className=" w-full max-w-6xl overflow-auto">
         <ThemeProvider theme={getMuiTheme()}>
           <MUIDataTable
-          
             title={"Customer List"}
             data={customerTransactions}
             columns={columns}
