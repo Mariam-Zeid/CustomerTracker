@@ -175,21 +175,21 @@ export default function CustomersTable() {
     }
   }, [customers, transactions]);
 
+  if (loading) {
+    return <Loading />;
+  }
   return (
-    <>
-      {loading && <Loading />}
-      <div className="bg-gray-900 py-10 min-h-screen grid place-items-center">
-        <div className="w-10/12 max-w-6xl">
-          <ThemeProvider theme={getMuiTheme()}>
-            <MUIDataTable
-              title={"Customer List"}
-              data={customerTransactions}
-              columns={columns}
-              options={options}
-            />
-          </ThemeProvider>
-        </div>
+    <div className="bg-gray-900 py-10 min-h-screen grid place-items-center">
+      <div className="w-10/12 max-w-6xl">
+        <ThemeProvider theme={getMuiTheme()}>
+          <MUIDataTable
+            title={"Customer List"}
+            data={customerTransactions}
+            columns={columns}
+            options={options}
+          />
+        </ThemeProvider>
       </div>
-    </>
+    </div>
   );
 }

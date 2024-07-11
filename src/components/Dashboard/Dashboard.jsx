@@ -33,10 +33,11 @@ export default function Dashboard() {
     (transaction) => transaction.customer_id == customerId
   );
 
-  console.log(customerTransactions);
+  if (loading) {
+    return <Loading />;
+  }
   return (
     <>
-      {loading && <Loading />}
       {!loading && customerTransactions.length > 0 ? (
         <div className="bg-gray-900 py-10 min-h-screen grid place-items-center text-white">
           <div className="wrapper text-center">
