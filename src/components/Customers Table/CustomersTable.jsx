@@ -72,11 +72,15 @@ export default function CustomersTable() {
   ];
 
   const options = {
-    selectableRows: "none",
+    selectableRows: false,
     elevation: 0,
     rowsPerPage: 5,
+    fixedHeader: true,
     rowsPerPageOptions: [5, 10, 20, 30],
-    responsive: "standard",
+    responsive: 'scrollMaxHeight',
+    scrollY: true,
+    scrollX: true,
+    scrollbars: true,
   };
 
   const getMuiTheme = () =>
@@ -179,10 +183,11 @@ export default function CustomersTable() {
     return <Loading />;
   }
   return (
-    <div className="bg-gray-900 py-10 min-h-screen grid place-items-center">
-      <div className="w-10/12 max-w-6xl">
+    <div className="bg-gray-900 py-5 lg:py-10 min-h-screen grid place-items-center">
+      <div className=" w-full max-w-6xl overflow-auto">
         <ThemeProvider theme={getMuiTheme()}>
           <MUIDataTable
+          
             title={"Customer List"}
             data={customerTransactions}
             columns={columns}

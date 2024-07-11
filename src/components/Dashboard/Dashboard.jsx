@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Loading from "../Loading/Loading";
-import { LineChart, Line, XAxis, YAxis } from "recharts";
+import { LineChart, Line, XAxis, YAxis, ResponsiveContainer } from "recharts";
 export default function Dashboard() {
   const { customerId } = useParams();
   const [transactions, setTransactions] = useState([]);
@@ -44,11 +44,13 @@ export default function Dashboard() {
             <h1 className="text-4xl mb-20 text-center">
               Transactions Dashboard
             </h1>
-            <LineChart width={600} height={300} data={customerTransactions}>
-              <Line type="monotone" dataKey="amount" stroke="#8884d8" />
-              <XAxis dataKey="date" />
-              <YAxis />
-            </LineChart>
+            <ResponsiveContainer width="95%" className="px-3" height={300}>
+              <LineChart data={customerTransactions}>
+                <Line type="monotone" dataKey="amount" stroke="#8884d8" />
+                <XAxis dataKey="date" />
+                <YAxis />
+              </LineChart>
+            </ResponsiveContainer>
             <Link
               to="/"
               className="bg-sky-600 px-3 py-1 rounded-md mt-10 inline-block "
