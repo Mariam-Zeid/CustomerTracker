@@ -10,7 +10,9 @@ export default function Dashboard() {
   const fetchTransactions = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:3000/transactions");
+      const response = await fetch(
+        "https://islamic-backend-3.onrender.com/api/track/transactions"
+      );
       if (!response.ok) {
         throw new Error("Failed to fetch data");
       }

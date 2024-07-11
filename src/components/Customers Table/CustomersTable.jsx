@@ -113,7 +113,9 @@ export default function CustomersTable() {
   const fetchCustomers = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:3000/customers");
+      const response = await fetch(
+        "https://islamic-backend-3.onrender.com/api/track/customers"
+      );
       if (!response.ok) {
         throw new Error("Failed to fetch data");
       }
@@ -129,7 +131,9 @@ export default function CustomersTable() {
   const fetchTransactions = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:3000/transactions");
+      const response = await fetch(
+        "https://islamic-backend-3.onrender.com/api/track/transactions"
+      );
       if (!response.ok) {
         throw new Error("Failed to fetch data");
       }
